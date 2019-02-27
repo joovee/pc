@@ -34,21 +34,21 @@ include("authentication.php");
               </a>
             </li>
 			<li class="nav-item ">
-              <a class="nav-link " href="addcustomer.php" >
+              <a class="nav-link " href="Viewcustomer.php" >
               Customer
               </a>
             </li>
 			<li class="nav-item ">
-              <a class="nav-link " href="addproducts.php" >
+              <a class="nav-link " href="viewproduct.php" >
                Product
               </a>
             </li>
 			<li class="nav-item ">
-              <a class="nav-link " href="addcollection.php" >
+              <a class="nav-link " href="viewcollection.php" >
                Collection
               </a>
             </li><li class="nav-item ">
-              <a class="nav-link " href="additems.php" >
+              <a class="nav-link " href="viewitems.php" >
                Items
               </a>
             </li><li class="nav-item ">

@@ -13,8 +13,9 @@ include("authentication.php");
 </head>
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 <div class="sidebar">
-  <a href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
   <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
+  <a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customer</a>
   <a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection</a>
   <a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items</a>
   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
@@ -24,9 +25,9 @@ include("authentication.php");
 <h2><font face="Britannic Bold">Product List</font></h2>
 </div>
 
-<table class="table-striped" width="100%"  style="border-collapse:collapse;">
+<table class=" table table-striped table-responsive table-border-collapse" width="100%"  style="border-collapse:collapse; background-color: rgba(0,0,0,0.1)">
 <thead>
-<tr>
+<tr class=" text-success"> 
 <th><strong>Number</strong></th>
 <th><strong>Product_ID</strong></th>
 <th><strong>Particular</strong></th>
@@ -49,9 +50,9 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 <tr><td align="center"><?php echo $count; ?></td>
 <td align="center"><?php echo $row["Product_ID"]; ?></td>
 <td align="center"><?php echo $row["Particular"]; ?></td>
-<td align="center"><?php echo $row["Unit"]; ?></td>
 <td align="center"><?php echo $row["Item_Quantity"]; ?></td>
 <td align="center"><?php echo $row["Unit"]; ?></td>
+<td align="center"><?php echo $row["Regular_Price"]; ?></td>
 <td align="center"><?php echo $row["Discount"]; ?></td>
 <td align="center">
 <a href="editproducts.php?id=<?php echo $row["Product_ID"]; ?>"><i class="fa fa-edit"></i></a>

@@ -1,10 +1,47 @@
 <?php
-require('db.php');
-include("authentication.php");
-$id=$_REQUEST['id'];
-$query = "SELECT * from customer_table where id='".$id."'"; 
-$result = mysqli_query($con, $query)or die ( mysqli_error());
-$row = mysqli_fetch_assoc($result); 
+	require('db.php');
+	include("authentication.php");
+	$id = $_GET['id'];
+	$query = "SELECT * from customer_table where Customer_ID='".$id."'"; 
+	$result = mysqli_query($con, $query)or die ( mysqli_error());
+	$row = mysqli_fetch_assoc($result); 
+	
+	
+	// Use to update record
+	if(isset($_POST['update_record'])){
+		$firstname =$_POST['Firstname'];
+		$lastname =$_POST['Lastname'];
+		$middlename =$_POST['Middlename'];
+		$extendedname =$_POST['Extendedname'];
+		$phonenumber =$_POST['Phonenumber'];
+		$street =$_POST['Street'];
+		$city =$_POST['City'];
+		$update="
+		UPDATE customer_table 
+		SET 
+			Firstname='".$firstname."', 
+			Lastname='".$lastname."', 
+			Middlename='".$middlename."',
+			Extendedname='".$extendedname."', 
+			Phonenumber='".$phonenumber."', 
+			Street='".$street."',
+			City='".$city."' 
+		where
+			Customer_ID=".$id;
+		if(mysqli_query($con, $update)){
+			echo "
+				<script>
+				var msg = confirm('Record Updated');
+				(msg == true)  ? window.location.href='Viewcustomer.php' : window.location.href='Viewcustomer.php';
+				</script>
+			";
+			
+			
+		}
+		
+		
+		
+	}
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,27 +59,7 @@ $row = mysqli_fetch_assoc($result);
 		<a href="logout.php"><i class="fa fa-fw fa-user"></i> Logout</a>
 	</div>
 		<center><h1>Update Record</h1>
-<?php
-	$status = "";
-	if(isset($_POST['submit']) && $_POST['new']==1)
-	{
-	$id = $_POST['id'];
-	$firstname =$_POST['Firstname'];
-	$lastname =$_POST['Lastname'];
-	$middlename =$_POST['Middlename'];
-	$extendedname =$_POST['Extendedname'];
-	$phonenumber =$_POST['Phonenumber'];
-	$street =$_POST['Street'];
-	$city =$_POST['City'];
-	$update="UPDATE customer_table SET 
-	Firstname='".$firstname."', Lastname='".$lastname."', Middlename='".$middlename."', Extendedname='".$extendedname.", Phonenumber='".$phonenumber."', Street='".$street."',
-	City'".$city."' where Customer_ID='".$id."'";
-	mysqli_query($con, $update);
-	$status = "Customer Updated Successfully. </br></br>
-	<a href='Viewcustomer.php'>View Updated Customer</a>";
-	echo '<p style="color:#FF0000;">'.$status.'</p>';
-	}else {
-?>
+
 	<div>
 		<form name="form" method="post" action=""> 
 			<input name="id" type="hidden" value="<?php echo $row['Customer_ID'];?>" />
@@ -60,10 +77,10 @@ $row = mysqli_fetch_assoc($result);
 			required value="<?php echo $row['Street'];?>" /></p>
 			<p><input type="text" name="City" placeholder="Enter City" 
 			required value="<?php echo $row['City'];?>" /></p>
-			<p><input name="submit" type="submit" value="Update" /></p>
+			<p><input name="update_record" type="submit" value="Update" /></p>
 		</form>
 		</center>
-<?php } ?>
+		
 </div>
 </div>
 </body>

@@ -13,22 +13,22 @@ include("authentication.php");
 </head>
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 <div class="sidebar">
-  <a href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Add new Customers</a>
-  <a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Products</a>
-  <a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection</a>
-  <a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items</a>
-  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+	<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Add new Customers</a>
+	<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
+	<a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection </a>
+	<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
+   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 </div>
 <center><div class="main w-75">
 <br/><br/><div class="form">
 <h2><font face="Britannic Bold">Customers List</font></h2>
 </div>
 
-<table class="table-striped" width="100%"  style="border-collapse:collapse;">
+<table class=" table table-striped table-responsive table-border-collapse" width="100%"  style="border-collapse:collapse; background-color: rgba(0,0,0,0.1)">
 <thead>
-<tr>
-<th><strong>Customer_Id</strong></th>
+<tr class=" text-success"> 
+<th ><strong >Customer_Id</strong></th>
 <th><strong>Firstname</strong></th>
 <th><strong>Lastname</strong></th>
 <th><strong>Middlename</strong></th>
@@ -48,7 +48,8 @@ $count=1;
 $sel_query="SELECT * FROM customer_table;";
 $result = mysqli_query($con,$sel_query);
 while($row = mysqli_fetch_assoc($result)) { ?>
-<tr><td align="center"><?php echo $count; ?></td>
+<tr>
+<td align="center"><?php echo $row["Customer_ID"]; ?></td>
 <td align="center"><?php echo $row["Firstname"]; ?></td>
 <td align="center"><?php echo $row["Lastname"]; ?></td>
 <td align="center"><?php echo $row["Middlename"]; ?></td>
@@ -58,7 +59,7 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 <td align="center"><?php echo $row["City"]; ?></td>
 
 <td align="center">
-<a href="customeredit.php?id=<?php echo $row["Customer_ID"]; ?>"><i class="fa fa-edit"></i></a>
+<a href="editcustomer.php?id=<?php echo $row["Customer_ID"]; ?>"><i class="fa fa-edit"></i></a>
 </td>
 <td align="center">
 <a href="deletecustomer.php?id=<?php echo $row["Customer_ID"]; ?>"><i class="fa fa-trash-o"></i></a>
