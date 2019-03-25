@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="style.css" />
 </head>
-<body background="photos/Blue-Wave-DWL-Lemon-Web-Banner-01.jpg" alt="Responsive background-image" >
+<body background="photos/1458449.jpg" alt="Responsive background-image" >
 <?php
 require('db.php');
 session_start();
@@ -36,7 +36,7 @@ and password='".md5($password)."'";
 ?>
 <br/><br/><br/><br/><br/><br/>
 <div class="form">
-<h1><font face="Britannic Bold">Log In</font></h1>
+<h1><font face="Britannic Bold"><font color="red">Log In</font></font></h1>
 <form action="" method="post" name="login">
 <input type="text" name="username" placeholder="Username" required />
 <input type="password" name="password" placeholder="Password" required /><br/>
@@ -47,7 +47,7 @@ and password='".md5($password)."'";
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+  <div class="footer-copyright text-center py-3"><font color="red">© 2019 Copyright:</font>
   
   </div>
   <!-- Copyright -->

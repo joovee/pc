@@ -65,6 +65,7 @@
 	<div>
 		<form name="form" method="post" action=""> 
 			<input name="id" type="hidden" value="<?php echo $row['Code_no'];?>" />
+<<<<<<< HEAD
 			<p><input type="text" name="Code_no" placeholder="Enter Code_no"
 			required value="<?php echo $row['Code_no'];?>" /></p>
 			<p><input type="text" name="Customer_ID" placeholder="Enter Customer_ID"
@@ -76,6 +77,23 @@
 			<p><input type="date" name="Date_paid" placeholder="Enter Date_paid" 
 			required value="<?php echo $row['Date_paid'];?>" /></p>
 			<p><input type="text" name="Interest" placeholder="Enter Interest" 
+=======
+			<label>Code_no</label><p><input type="text" name="Code_no" placeholder="Enter Code_no"
+			required value="<?php echo $row['Code_no'];?>" /></p>
+			<label>Customer_ID</label><p><input type="text" name="Customer_ID" placeholder="Enter Customer_ID"
+			required value="<?php echo $row['Customer_ID'];?>" /></p>
+			<label>Due_date</label><p><input type="date" name="Due_date" placeholder="Enter Due_date" 
+			required value="<?php echo $row['Due_date'];?>" /></p>
+			 <label> Status: </label>
+					<select input type="text" name="stat" class="form-control" placeholder="Status" required value="<?php echo $row['Status'];?>">
+						<option placeholder=""></option>
+						<option placeholder=""> Paid</option>
+						<option placeholder=""> Unpaid</option>
+					</select><br><br>
+			<label>Date_paid</label><p><input type="date" name="Date_paid" placeholder="Enter Date_paid" 
+			required value="<?php echo $row['Date_paid'];?>" /></p>
+			<label>Interest</label><p><input type="text" name="Interest" placeholder="Enter Interest" 
+>>>>>>> update
 			required value="<?php echo $row['Interest'];?>" /></p>
 			<p><input name="update_record" type="submit" value="Update" /></p>
 		</form>
