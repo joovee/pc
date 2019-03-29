@@ -42,10 +42,14 @@ include("authentication.php");
             </li>
 			<li class="nav-item ">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <a class="nav-link " href="viewproduct.php" >
 =======
               <a class="nav-link " href="viewproducts.php" >
 >>>>>>> update
+=======
+              <a class="nav-link " href="viewproducts.php" >
+>>>>>>> new files
                Product
               </a>
             </li>
@@ -57,10 +61,17 @@ include("authentication.php");
               <a class="nav-link " href="viewitems.php" >
                Items
               </a>
+			   <li class="nav-item ">
+              <a class="nav-link " href="changepass.html" >
+               Update Password
+              </a>
+<<<<<<< HEAD
+=======
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
               </a>
+>>>>>>> new files
             
             </li>
           </ul>

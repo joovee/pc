@@ -28,8 +28,11 @@ if(isset($_POST['new']) && $_POST['new']==1){
 </head>
 	<body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<div class="sidebar">
 =======
+=======
+>>>>>>> new files
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +84,10 @@ if(isset($_POST['new']) && $_POST['new']==1){
     </nav><br/><br/>
 		<div class="sidebar">
 		<br><br><br>
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 			<a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
 			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>

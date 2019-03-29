@@ -113,6 +113,7 @@ body {
 		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 		</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<center><div class="main w-75">
 		<br/><br/>
 		<div class="form">
@@ -141,6 +142,8 @@ $sel_query="SELECT * FROM collection_items";
 $result = mysqli_query($con,$sel_query);
 while($row = mysqli_fetch_assoc($result)) { ?>
 =======
+=======
+>>>>>>> new files
 		<div class="row" >
 
 		</div>
@@ -165,7 +168,10 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 		$sel_query="SELECT * FROM collection_items";
 		$result = mysqli_query($con,$sel_query);
 		while($row = mysqli_fetch_assoc($result)) { ?>
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 			<tr><td align="center"><?php echo $count; ?></td>
 				<td align="center"><?php echo $row["Code_no"]; ?></td>
 				<td align="center"><?php echo $row["Product_ID"]; ?></td>
@@ -180,8 +186,11 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 				</td>
 					</tr>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php $count++; } ?>	
 =======
+=======
+>>>>>>> new files
 			<?php $count++; } ?>	
 				</tbody>
 				</thead>
@@ -193,7 +202,10 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 		<div class="footer">
 			
 		</div>	
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 </tbody>
 </table>
 </body>

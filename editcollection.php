@@ -66,6 +66,7 @@
 		<form name="form" method="post" action=""> 
 			<input name="id" type="hidden" value="<?php echo $row['Code_no'];?>" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<p><input type="text" name="Code_no" placeholder="Enter Code_no"
 			required value="<?php echo $row['Code_no'];?>" /></p>
 			<p><input type="text" name="Customer_ID" placeholder="Enter Customer_ID"
@@ -78,6 +79,8 @@
 			required value="<?php echo $row['Date_paid'];?>" /></p>
 			<p><input type="text" name="Interest" placeholder="Enter Interest" 
 =======
+=======
+>>>>>>> new files
 			<label>Code_no</label><p><input type="text" name="Code_no" placeholder="Enter Code_no"
 			required value="<?php echo $row['Code_no'];?>" /></p>
 			<label>Customer_ID</label><p><input type="text" name="Customer_ID" placeholder="Enter Customer_ID"
@@ -93,7 +96,10 @@
 			<label>Date_paid</label><p><input type="date" name="Date_paid" placeholder="Enter Date_paid" 
 			required value="<?php echo $row['Date_paid'];?>" /></p>
 			<label>Interest</label><p><input type="text" name="Interest" placeholder="Enter Interest" 
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 			required value="<?php echo $row['Interest'];?>" /></p>
 			<p><input name="update_record" type="submit" value="Update" /></p>
 		</form>

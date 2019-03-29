@@ -13,6 +13,7 @@ include("authentication.php");
 </head>
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="sidebar">
   <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
   <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
@@ -22,6 +23,8 @@ include("authentication.php");
   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 </div>
 =======
+=======
+>>>>>>> new files
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +83,10 @@ include("authentication.php");
 	  <a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items</a>
 	  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 	</div>
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 <center><div class="main w-75">
 <br/><br/><div class="form">
 <h2><font face="Britannic Bold">Product List</font></h2>
@@ -92,7 +98,6 @@ include("authentication.php");
 <th><strong>Number</strong></th>
 <th><strong>Product_ID</strong></th>
 <th><strong>Particular</strong></th>
-<th><strong>Item_Quantity</strong></th>
 <th><strong>Unit</strong></th>
 <th><strong>Regular_Price</strong></th>
 <th><strong>Discount</strong></th>
@@ -111,7 +116,10 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 <tr><td align="center"><?php echo $count; ?></td>
 <td align="center"><?php echo $row["Product_ID"]; ?></td>
 <td align="center"><?php echo $row["Particular"]; ?></td>
+<<<<<<< HEAD
 <td align="center"><?php echo $row["Item_Quantity"]; ?></td>
+=======
+>>>>>>> new files
 <td align="center"><?php echo $row["Unit"]; ?></td>
 <td align="center"><?php echo $row["Regular_Price"]; ?></td>
 <td align="center"><?php echo $row["Discount"]; ?></td>

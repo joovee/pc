@@ -48,9 +48,13 @@
 		<meta charset="utf-8">
 		<title>Update Record</title>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 >>>>>>> update
+=======
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+>>>>>>> new files
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -107,9 +111,13 @@
 <br/><br/><br/><br/>
 	<div class="sidebar">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		<br><br><br>
 >>>>>>> update
+=======
+		<br><br><br>
+>>>>>>> new files
 		<a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 		<a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customer</a>
 		<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Products</a>
@@ -123,6 +131,7 @@
 		<form name="form" method="post" action=""> 
 			<input name="id" type="hidden" value="<?php echo $row['Product_ID'];?>" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<p><input type="text" name="Product_ID" placeholder="Enter Product_ID"
 			required value="<?php echo $row['Product_ID'];?>" /></p>
 			<p><input type="text" name="Particular" placeholder="Enter Particular"
@@ -135,6 +144,8 @@
 			required value="<?php echo $row['Regular_Price'];?>" /></p>
 			<p><input type="text" name="Discount" placeholder="Enter Discount" 
 =======
+=======
+>>>>>>> new files
 			<label>Product_ID:</label>
 			<p><input type="text" name="Product_ID" placeholder="Enter Product_ID"
 			required value="<?php echo $row['Product_ID'];?>" /></p>
@@ -147,7 +158,10 @@
 			<label>Regular_Price:</label><p><input type="text" name="Regular_Price" placeholder="Enter Regular_Price" 
 			required value="<?php echo $row['Regular_Price'];?>" /></p>
 			<label>Discount:</label><p><input type="text" name="Discount" placeholder="Enter Discount" 
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 			required value="<?php echo $row['Discount'];?>" /></p>
 			<p><input name="update_record" type="submit" value="Update" /></p>
 		</form>

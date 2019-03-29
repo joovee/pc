@@ -5,12 +5,20 @@ $status = "";
 if(isset($_POST['new']) && $_POST['new']==1){
 	$id =$_REQUEST['Product_ID'];
     $part =$_REQUEST['Particular'];
+<<<<<<< HEAD
     $itq = $_REQUEST['Item_Quantity'];
 	$unt = $_REQUEST['Unit'];
 	$regprice = $_REQUEST['Regular_Price'];
     $discount = $_REQUEST['Discount'];
     $ins_query="insert into product_table(Product_ID,Particular,Item_Quantity,Unit,Regular_Price,Discount) values
     ('$id','$part','$itq','$unt','$regprice','$discount')";
+=======
+	$unt = $_REQUEST['Unit'];
+	$regprice = $_REQUEST['Regular_Price'];
+    $discount = $_REQUEST['Discount'];
+    $ins_query="insert into product_table(Product_ID,Particular,Unit,Regular_Price,Discount) values
+    ('$id','$part','$itq','$regprice','$discount')";
+>>>>>>> new files
     mysqli_query($con,$ins_query);
     $status = "New customer added Successfully.
     </br></br><a href='viewproducts.php'>View Product</a>";
@@ -27,7 +35,10 @@ if(isset($_POST['new']) && $_POST['new']==1){
 </head>
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> new files
 	<nav class="navbar fixed-top navbar-expand-lg navbar-black bg-white fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +88,10 @@ if(isset($_POST['new']) && $_POST['new']==1){
         </div>
 		</button>
     </nav><br/><br/>
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 	<div class="sidebar">
 	  <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 	  <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
@@ -94,6 +108,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	<input type="hidden" name="new" value="1" />
 	<p><input type="text" name="Product_ID" placeholder="Enter Product_ID" required /></p>
 	<p><input type="text" name="Particular" placeholder="Enter Particular" required /></p>
+<<<<<<< HEAD
 	<p><input type="text" name="Item_Quantity" placeholder="Enter Item_Quantity" required /></p>
 <<<<<<< HEAD
 	<p><input type="text" name="Unit" placeholder="Enter Unit" required /></p>
@@ -103,6 +118,10 @@ if(isset($_POST['new']) && $_POST['new']==1){
 =======
 	<label> Unit: </label>
 					<select input type="text" name="Unit" class="form-control" placeholder="Unit" required  >
+=======
+	<label> Unit: </label>
+					<select input type="text" name="Unit" style="width:197px;" class="form-control" placeholder="Unit" required  >
+>>>>>>> new files
 						<option placeholder=""></option>
 						<option placeholder="">pack</option>
 						<option placeholder="">kl</option>
@@ -114,7 +133,10 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	<p><input type="text" name="Regular_Price" placeholder="Enter Regular_Price" required /></p>
 	<p><input type="text" name="Discount" placeholder="Enter Discount" required /></p>
 	<p><input name="submit" type="submit" value="Save" /></p>
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 	</form>
 	<p style="color:#FF0000;"><?php echo $status; ?></p>
 </div>

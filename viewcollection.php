@@ -12,6 +12,7 @@ include("authentication.php");
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 		<div class="sidebar">
 		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
@@ -56,6 +57,14 @@ while($row = mysqli_fetch_assoc($result)) { ?>
  
 }
 
+=======
+	<style>
+	{
+  box-sizing: border-box;
+ 
+}
+
+>>>>>>> new files
 body {
    margin:10px;
   padding:0px;
@@ -178,10 +187,22 @@ body {
               <a class="nav-link " href="viewcollection.php" >
                Collection
               </a>
+<<<<<<< HEAD
             </li><li class="nav-item ">
               <a class="nav-link " href="viewitems.php" >
                Items
               </a>
+=======
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link " href="viewitems.php" >
+               Items
+              </a>
+			  <li class="nav-item ">
+              <a class="nav-link " href="changepass.php" >
+               Update Password
+              </a>
+>>>>>>> new files
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
@@ -195,12 +216,20 @@ body {
 		<div class="sidebar">
 			<br><br><br>
 		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+<<<<<<< HEAD
 			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
+=======
+			<a href="testing.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
+>>>>>>> new files
 			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
 			<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
 			<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
 		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 		</div>
+<<<<<<< HEAD
+=======
+		<br><br><br>
+>>>>>>> new files
 		<div class="row">
 		<div class="column" style="background-color:#808080; margin-left:270px;"> 
 			<table width="99%" border="1" style="border-collapse:collapse; background-color:white;">
@@ -224,7 +253,10 @@ body {
 		$sel_query="SELECT * FROM collection_table";
 		$result = mysqli_query($con,$sel_query);
 		while($row = mysqli_fetch_assoc($result)) { ?>
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 		<tr><td align="center"><?php echo $count; ?></td>
 			<td align="center"><?php echo $row["Code_no"]; ?></td>
 			<td align="center"><?php echo $row["Customer_ID"]; ?></td>
@@ -240,8 +272,11 @@ body {
 						</td>
 							</tr>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php $count++; } ?>
 =======
+=======
+>>>>>>> new files
 		<?php $count++; } ?>
 				</tbody>
 				</thead>
@@ -287,7 +322,10 @@ body {
 				</thead>
 				</table>
 		</div>
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 </tbody>
 </table>
 </body>

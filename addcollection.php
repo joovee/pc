@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 require('db.php');
 include("authentication.php");
@@ -31,6 +32,9 @@ if(isset($_POST['new']) && $_POST['new']==1){
 ?>
 
 	
+=======
+<?php include('juvy.php');?>
+>>>>>>> new files
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,8 +46,11 @@ if(isset($_POST['new']) && $_POST['new']==1){
 </head>
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<div class="sidebar">
 =======
+=======
+>>>>>>> new files
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,7 +103,10 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	<br><br><br>
 	<div class="sidebar">
 		<br><br><br><br><br>
+<<<<<<< HEAD
 >>>>>>> update
+=======
+>>>>>>> new files
 	   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 		<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
 		<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
@@ -105,6 +115,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 	</div>
 	<div class="main">
+<<<<<<< HEAD
 <<<<<<< HEAD
 	<br/><br/><br/><br/><div class="form">
 	<div>
@@ -202,5 +213,64 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	</div>
 	</center>
 >>>>>>> update
+=======
+	<br/><br/><br/><br/><div class="form">
+	<div>
+	<form action="juvy.php" method="POST">
+	<b><a style="font-size:20px;">Customer Name:</b></a>
+		<?php
+			$sql = "SELECT * FROM customer_table";
+			$result = mysqli_query($mysqli, $sql);
+
+		?>
+		<select name="customer_id" class="form-control">
+		<?php
+			$resultCheck = mysqli_num_rows($records);
+				while ($row = mysqli_fetch_array($result)){
+					
+		?>
+			<option value="<?php echo $row['customer_id'];?>"><?php echo $row['Firstname'];?></option>
+			<?php
+				}
+			?>
+		</select>
+		<div class="form-group">
+		<font color="black"><label for="exampleInputEmail1"><b>Status:</label></b>
+		<select name="status" class="form-control" value="<?php echo $status;?>"placeholder="status" required>
+			<option value="" placeholder="status" required></option>
+			<option value="paid">Paid</option>
+			<option value="unpaid">Unpaid</option>
+		</div>
+		</select>
+		
+		<div class="form-group">
+		<font color="black"><label for="exampleInputEmail1"><b>Due Date:</label></b>
+			<input type="date" name="due_date" class="form-control" value="<?php echo $due_date;?>"placeholder="due_date" required>
+		</div>
+		<div class="form-group">
+		<font color="black"><label for="exampleInputEmail1"><b>Interest:</label></b>
+			<input type="interest" name="interest" class="form-control" value="<?php echo $interest;?>"placeholder="interest" required>
+		</div>
+		<div class="form-group">
+		<font color="black"><label for="exampleInputEmail1"><b>Date Paid:</label></b>
+			<input type="date" name="date_paid" class="form-control" value="<?php echo $date_paid;?>"placeholder="date_paid" required>
+		</div>
+		<div class="form-group">
+		<?php 
+			if($update==true):
+		?>
+		<button type="submit" class="btn btn-info" name="update">Update</button>
+		<a href="collection.php"class="btn btn-info">View Table</a>
+		<?php else: ?>
+			<button type="submit" class="btn btn-primary" name="save">Save</button>
+			<a href="collection.php"class="btn btn-primary">View Table</a>
+		<?php endif;?>
+		</div>
+	</form>
+	</div>
+</div>
+	
+	</div>
+>>>>>>> new files
 </body>
 </html>
