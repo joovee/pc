@@ -64,12 +64,16 @@ include("authentication.php");
 <div class="sidebar">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	<br><br><br>
 >>>>>>> update
 =======
 	<br><br><br>
 >>>>>>> new files
+=======
+	<br><br><br>
+>>>>>>> new update files
    <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 	<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Add new Customers</a>
 	<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>

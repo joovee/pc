@@ -43,6 +43,7 @@ include("authentication.php");
 			<li class="nav-item ">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               <a class="nav-link " href="viewproduct.php" >
 =======
               <a class="nav-link " href="viewproducts.php" >
@@ -50,6 +51,9 @@ include("authentication.php");
 =======
               <a class="nav-link " href="viewproducts.php" >
 >>>>>>> new files
+=======
+              <a class="nav-link " href="viewproducts.php" >
+>>>>>>> new update files
                Product
               </a>
             </li>
@@ -71,7 +75,10 @@ include("authentication.php");
               <a class="nav-link " href="logout.php" >
                Logout
               </a>
+<<<<<<< HEAD
 >>>>>>> new files
+=======
+>>>>>>> new update files
             
             </li>
           </ul>

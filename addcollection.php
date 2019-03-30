@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 require('db.php');
 include("authentication.php");
@@ -35,6 +36,9 @@ if(isset($_POST['new']) && $_POST['new']==1){
 =======
 <?php include('juvy.php');?>
 >>>>>>> new files
+=======
+<?php include('juvy.php');?>
+>>>>>>> new update files
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,10 +51,13 @@ if(isset($_POST['new']) && $_POST['new']==1){
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<div class="sidebar">
 =======
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,9 +111,12 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	<div class="sidebar">
 		<br><br><br><br><br>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 	   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 		<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
 		<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
@@ -115,6 +125,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 	</div>
 	<div class="main">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	<br/><br/><br/><br/><div class="form">
@@ -214,6 +225,8 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	</center>
 >>>>>>> update
 =======
+=======
+>>>>>>> new update files
 	<br/><br/><br/><br/><div class="form">
 	<div>
 	<form action="juvy.php" method="POST">
@@ -271,6 +284,9 @@ if(isset($_POST['new']) && $_POST['new']==1){
 </div>
 	
 	</div>
+<<<<<<< HEAD
 >>>>>>> new files
+=======
+>>>>>>> new update files
 </body>
 </html>

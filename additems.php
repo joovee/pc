@@ -34,6 +34,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
 			   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 			</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<div class="main">
 	<br/><br/><br/><br/><div class="form">
 	<div>
@@ -52,6 +53,8 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	</div>
 	</div>
 =======
+=======
+>>>>>>> new update files
 	<div class="main margin-right:50px;">
 	
 	<br/><br/><br/><br/><div class="form">
@@ -145,6 +148,9 @@ if(isset($_POST['new']) && $_POST['new']==1){
 			});
 		});
 		</script>
+<<<<<<< HEAD
 >>>>>>> new files
+=======
+>>>>>>> new update files
 </body>
 </html>

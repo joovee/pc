@@ -6,6 +6,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	$id =$_REQUEST['Product_ID'];
     $part =$_REQUEST['Particular'];
 <<<<<<< HEAD
+<<<<<<< HEAD
     $itq = $_REQUEST['Item_Quantity'];
 	$unt = $_REQUEST['Unit'];
 	$regprice = $_REQUEST['Regular_Price'];
@@ -13,12 +14,17 @@ if(isset($_POST['new']) && $_POST['new']==1){
     $ins_query="insert into product_table(Product_ID,Particular,Item_Quantity,Unit,Regular_Price,Discount) values
     ('$id','$part','$itq','$unt','$regprice','$discount')";
 =======
+=======
+>>>>>>> new update files
 	$unt = $_REQUEST['Unit'];
 	$regprice = $_REQUEST['Regular_Price'];
     $discount = $_REQUEST['Discount'];
     $ins_query="insert into product_table(Product_ID,Particular,Unit,Regular_Price,Discount) values
     ('$id','$part','$itq','$regprice','$discount')";
+<<<<<<< HEAD
 >>>>>>> new files
+=======
+>>>>>>> new update files
     mysqli_query($con,$ins_query);
     $status = "New customer added Successfully.
     </br></br><a href='viewproducts.php'>View Product</a>";
@@ -36,9 +42,12 @@ if(isset($_POST['new']) && $_POST['new']==1){
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 	<nav class="navbar fixed-top navbar-expand-lg navbar-black bg-white fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,9 +98,12 @@ if(isset($_POST['new']) && $_POST['new']==1){
 		</button>
     </nav><br/><br/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 	<div class="sidebar">
 	  <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 	  <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
@@ -109,6 +121,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	<p><input type="text" name="Product_ID" placeholder="Enter Product_ID" required /></p>
 	<p><input type="text" name="Particular" placeholder="Enter Particular" required /></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<p><input type="text" name="Item_Quantity" placeholder="Enter Item_Quantity" required /></p>
 <<<<<<< HEAD
 	<p><input type="text" name="Unit" placeholder="Enter Unit" required /></p>
@@ -122,6 +135,10 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	<label> Unit: </label>
 					<select input type="text" name="Unit" style="width:197px;" class="form-control" placeholder="Unit" required  >
 >>>>>>> new files
+=======
+	<label> Unit: </label>
+					<select input type="text" name="Unit" style="width:197px;" class="form-control" placeholder="Unit" required  >
+>>>>>>> new update files
 						<option placeholder=""></option>
 						<option placeholder="">pack</option>
 						<option placeholder="">kl</option>
@@ -134,9 +151,12 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	<p><input type="text" name="Discount" placeholder="Enter Discount" required /></p>
 	<p><input name="submit" type="submit" value="Save" /></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 	</form>
 	<p style="color:#FF0000;"><?php echo $status; ?></p>
 </div>

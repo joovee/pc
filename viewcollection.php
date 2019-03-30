@@ -13,6 +13,7 @@ include("authentication.php");
 </head>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 		<div class="sidebar">
 		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
@@ -51,12 +52,15 @@ $sel_query="SELECT * FROM collection_table";
 $result = mysqli_query($con,$sel_query);
 while($row = mysqli_fetch_assoc($result)) { ?>
 =======
+=======
+>>>>>>> new update files
 	<style>
 	{
   box-sizing: border-box;
  
 }
 
+<<<<<<< HEAD
 =======
 	<style>
 	{
@@ -65,6 +69,8 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 }
 
 >>>>>>> new files
+=======
+>>>>>>> new update files
 body {
    margin:10px;
   padding:0px;
@@ -188,11 +194,14 @@ body {
                Collection
               </a>
 <<<<<<< HEAD
+<<<<<<< HEAD
             </li><li class="nav-item ">
               <a class="nav-link " href="viewitems.php" >
                Items
               </a>
 =======
+=======
+>>>>>>> new update files
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="viewitems.php" >
@@ -202,7 +211,10 @@ body {
               <a class="nav-link " href="changepass.php" >
                Update Password
               </a>
+<<<<<<< HEAD
 >>>>>>> new files
+=======
+>>>>>>> new update files
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
@@ -217,19 +229,27 @@ body {
 			<br><br><br>
 		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
 =======
 			<a href="testing.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
 >>>>>>> new files
+=======
+			<a href="testing.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
+>>>>>>> new update files
 			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
 			<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
 			<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
 		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 		</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		<br><br><br>
 >>>>>>> new files
+=======
+		<br><br><br>
+>>>>>>> new update files
 		<div class="row">
 		<div class="column" style="background-color:#808080; margin-left:270px;"> 
 			<table width="99%" border="1" style="border-collapse:collapse; background-color:white;">
@@ -254,9 +274,12 @@ body {
 		$result = mysqli_query($con,$sel_query);
 		while($row = mysqli_fetch_assoc($result)) { ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 		<tr><td align="center"><?php echo $count; ?></td>
 			<td align="center"><?php echo $row["Code_no"]; ?></td>
 			<td align="center"><?php echo $row["Customer_ID"]; ?></td>
@@ -273,10 +296,13 @@ body {
 							</tr>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php $count++; } ?>
 =======
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 		<?php $count++; } ?>
 				</tbody>
 				</thead>
@@ -323,9 +349,12 @@ body {
 				</table>
 		</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 </tbody>
 </table>
 </body>

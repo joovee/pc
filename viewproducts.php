@@ -14,6 +14,7 @@ include("authentication.php");
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="sidebar">
   <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
   <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
@@ -25,6 +26,8 @@ include("authentication.php");
 =======
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,9 +87,12 @@ include("authentication.php");
 	  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 	</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 <center><div class="main w-75">
 <br/><br/><div class="form">
 <h2><font face="Britannic Bold">Product List</font></h2>
@@ -117,9 +123,12 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 <td align="center"><?php echo $row["Product_ID"]; ?></td>
 <td align="center"><?php echo $row["Particular"]; ?></td>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <td align="center"><?php echo $row["Item_Quantity"]; ?></td>
 =======
 >>>>>>> new files
+=======
+>>>>>>> new update files
 <td align="center"><?php echo $row["Unit"]; ?></td>
 <td align="center"><?php echo $row["Regular_Price"]; ?></td>
 <td align="center"><?php echo $row["Discount"]; ?></td>
