@@ -115,6 +115,7 @@ body {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<center><div class="main w-75">
 		<br/><br/>
 		<div class="form">
@@ -147,6 +148,8 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 		<div class="row" >
 
 		</div>
@@ -173,11 +176,14 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 		while($row = mysqli_fetch_assoc($result)) { ?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 			<tr><td align="center"><?php echo $count; ?></td>
 				<td align="center"><?php echo $row["Code_no"]; ?></td>
 				<td align="center"><?php echo $row["Product_ID"]; ?></td>
@@ -194,12 +200,15 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php $count++; } ?>	
 =======
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 			<?php $count++; } ?>	
 				</tbody>
 				</thead>
@@ -213,11 +222,14 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 		</div>	
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 </tbody>
 </table>
 </body>

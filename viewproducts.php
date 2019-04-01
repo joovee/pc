@@ -15,6 +15,7 @@ include("authentication.php");
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="sidebar">
   <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
   <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
@@ -28,6 +29,8 @@ include("authentication.php");
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,10 +47,13 @@ include("authentication.php");
                Home 
               </a>
             </li>
+<<<<<<< HEAD
 			<li class="nav-item ">
               <a class="nav-link " href="budgetlist.html" >
                About us
               </a>
+=======
+>>>>>>> New update
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -60,6 +66,7 @@ include("authentication.php");
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
               <a class="nav-link " href="viewcollection.php" >
                Collection
               </a>
@@ -67,6 +74,12 @@ include("authentication.php");
               <a class="nav-link " href="viewitems.php" >
                Items
               </a>
+=======
+              <a class="nav-link " href="sales.php" >
+               Sales
+              </a>
+            
+>>>>>>> New update
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
@@ -77,12 +90,17 @@ include("authentication.php");
         </div>
 		</button>
     </nav><br/><br/>
+<<<<<<< HEAD
+=======
+	
+>>>>>>> New update
 	<div class="sidebar">
 	<br><br><br>
 	  <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 	  <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
 	  <a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customer</a>
 	  <a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection</a>
+<<<<<<< HEAD
 	  <a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items</a>
 	  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 	</div>
@@ -93,11 +111,19 @@ include("authentication.php");
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+	  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+	</div>
+>>>>>>> New update
 <center><div class="main w-75">
 <br/><br/><div class="form">
 <h2><font face="Britannic Bold">Product List</font></h2>
 </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> New update
 <table class=" table table-striped table-responsive table-border-collapse" width="100%"  style="border-collapse:collapse; background-color: rgba(0,0,0,0.1)">
 <thead>
 <tr class=" text-success"> 
@@ -124,11 +150,14 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 <td align="center"><?php echo $row["Particular"]; ?></td>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <td align="center"><?php echo $row["Item_Quantity"]; ?></td>
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 <td align="center"><?php echo $row["Unit"]; ?></td>
 <td align="center"><?php echo $row["Regular_Price"]; ?></td>
 <td align="center"><?php echo $row["Discount"]; ?></td>

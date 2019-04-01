@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 require('db.php');
 include("authentication.php");
@@ -39,6 +40,9 @@ if(isset($_POST['new']) && $_POST['new']==1){
 =======
 <?php include('juvy.php');?>
 >>>>>>> new update files
+=======
+<?php include('juvy.php');?>
+>>>>>>> New update
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,12 +56,15 @@ if(isset($_POST['new']) && $_POST['new']==1){
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<div class="sidebar">
 =======
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,10 +81,14 @@ if(isset($_POST['new']) && $_POST['new']==1){
                Home 
               </a>
             </li>
+<<<<<<< HEAD
 			<li class="nav-item ">
               <a class="nav-link " href="budgetlist.html" >
                About us
               </a>
+=======
+			
+>>>>>>> New update
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -90,6 +101,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
               <a class="nav-link " href="viewcollection.php" >
                Collection
               </a>
@@ -97,6 +109,12 @@ if(isset($_POST['new']) && $_POST['new']==1){
               <a class="nav-link " href="viewitems.php" >
                Items
               </a>
+=======
+              <a class="nav-link " href="Sales.php" >
+               Sales
+              </a>
+           
+>>>>>>> New update
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
@@ -112,15 +130,19 @@ if(isset($_POST['new']) && $_POST['new']==1){
 		<br><br><br><br><br>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 	   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 		<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
 		<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
 		<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
+<<<<<<< HEAD
 		<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
 	   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 	</div>
@@ -230,6 +252,14 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	<br/><br/><br/><br/><div class="form">
 	<div>
 	<form action="juvy.php" method="POST">
+=======
+	   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+	</div>
+	<div class="main">
+	<br/><br/><br/><br/><div class="form">
+	<div>
+	<form method="POST">
+>>>>>>> New update
 	<b><a style="font-size:20px;">Customer Name:</b></a>
 		<?php
 			$sql = "SELECT * FROM customer_table";
@@ -242,7 +272,11 @@ if(isset($_POST['new']) && $_POST['new']==1){
 				while ($row = mysqli_fetch_array($result)){
 					
 		?>
+<<<<<<< HEAD
 			<option value="<?php echo $row['customer_id'];?>"><?php echo $row['Firstname'];?></option>
+=======
+			<option value="<?php echo $row['Customer_ID'];?>"><?php echo $row['Firstname'];?></option>
+>>>>>>> New update
 			<?php
 				}
 			?>
@@ -273,10 +307,17 @@ if(isset($_POST['new']) && $_POST['new']==1){
 			if($update==true):
 		?>
 		<button type="submit" class="btn btn-info" name="update">Update</button>
+<<<<<<< HEAD
 		<a href="collection.php"class="btn btn-info">View Table</a>
 		<?php else: ?>
 			<button type="submit" class="btn btn-primary" name="save">Save</button>
 			<a href="collection.php"class="btn btn-primary">View Table</a>
+=======
+		<a href="viewcollection.php"class="btn btn-info">View Sales</a>
+		<?php else: ?>
+			<button type="submit" class="btn btn-primary" name="save">Save</button>
+			<a href="checkbox.php"class="btn btn-primary"> +Add Items</a>
+>>>>>>> New update
 		<?php endif;?>
 		</div>
 	</form>
@@ -285,8 +326,11 @@ if(isset($_POST['new']) && $_POST['new']==1){
 	
 	</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 </body>
 </html>

@@ -66,6 +66,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<p><input type="text" name="Code_no" placeholder="Enter Code_no"
 			required value="<?php echo $row['Code_no'];?>" /></p>
 			<p><input type="text" name="Product_ID" placeholder="Enter Product_ID"
@@ -80,6 +81,8 @@
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 			<label>Code_no:</label>
 			<p><input type="text" name="Code_no" placeholder="Enter Code_no"
 			required value="<?php echo $row['Code_no'];?>" /></p>
@@ -92,11 +95,14 @@
 			<label>Amount:</label><p><input type="text" name="Amount" placeholder="Enter Amount" 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 			required value="<?php echo $row['Amount'];?>" /></p>
 			<p><input name="update_record" type="submit" value="Update" /></p>
 		</form>

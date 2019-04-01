@@ -3,6 +3,7 @@
 session_start();
 $mysqli = new mysqli('localhost','root','','pc') or die(mysqli_error($mysqli));
 
+<<<<<<< HEAD
 $id='';
 $update = false;
 $customer_id="";
@@ -10,6 +11,15 @@ $status="";
 $due_date="";
 $interest="";
 $date_paid="";
+=======
+//$id='';
+$update = false;
+$customer_id="";
+//$status="";
+//$due_date="";
+$interest="";
+//$date_paid="";
+>>>>>>> New update
 
 
 
@@ -23,6 +33,7 @@ if(isset($_POST['save'])){
 	$due_date = $_POST['due_date'];
 	$interest = $_POST['interest'];
 	$date_paid = $_POST['date_paid'];
+<<<<<<< HEAD
 	$result=$mysqli->query("select * from collection_table where customer_id='$customer_id'") or die($mysqli->error);
 	if(@count($result)==1)
 	{
@@ -31,6 +42,12 @@ if(isset($_POST['save'])){
 	
 	
 	$mysqli->query("INSERT INTO collection_table (customer_id,status,due_date,interest,date_paid) VALUES ('$customer_id','$status','$due_date','$interest','$date_paid')") or
+=======
+
+	
+	
+	$mysqli->query("INSERT INTO collection_table (customer_ID,Due_date,Status,Date_paid,Interest) VALUES ($customer_id,'$due_date','$status','$date_paid','$interest')") or
+>>>>>>> New update
 			die($mysqli->error);
 	$_SESSION['message'] = "Record has been saved!";
 	$_SESSION['msg_type'] = "success";
@@ -72,13 +89,20 @@ if(isset($_POST['update'])){
 	$date_paid = $_POST['date_paid'];
 	$interest = $_POST['interest'];
 	$due_date = $_POST['due_date'];
+<<<<<<< HEAD
 ;
+=======
+>>>>>>> New update
 	
 	$mysqli->query("UPDATE collection SET customer_id='$customer_id',status='$status',date_paid='$date_paid',interest='$interest',due_date='$due_date' WHERE collection_code=$id") or die($mysqli->error);
 	$_SESSION['message'] = "Record has been updated!";
 	$_SESSION['msg_type'] = "warning";
 	
+<<<<<<< HEAD
 	header('location:collection.php');
+=======
+	header('location:checkbox.php');
+>>>>>>> New update
 }
 
 

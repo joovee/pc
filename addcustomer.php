@@ -30,12 +30,15 @@ if(isset($_POST['new']) && $_POST['new']==1){
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<div class="sidebar">
 =======
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,10 +55,14 @@ if(isset($_POST['new']) && $_POST['new']==1){
                Home 
               </a>
             </li>
+<<<<<<< HEAD
 			<li class="nav-item ">
               <a class="nav-link " href="budgetlist.html" >
                About us
               </a>
+=======
+			
+>>>>>>> New update
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -89,16 +96,22 @@ if(isset($_POST['new']) && $_POST['new']==1){
 		<br><br><br>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 			<a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
 			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
 			<a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection </a>
+<<<<<<< HEAD
 			<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
+=======
+>>>>>>> New update
 		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 		</div>
 		<div class="main">
@@ -108,12 +121,28 @@ if(isset($_POST['new']) && $_POST['new']==1){
 		<h2><font face="Britannic Bold">Add New Customer</font></h2>
 			<form name="form" method="post" action=""> 
 				<input type="hidden" name="new" value="1" />
+<<<<<<< HEAD
 				<p><input type="text" name="Firstname" placeholder="Enter Name" required /></p>
 				<p><input type="text" name="Lastname" placeholder="Enter lastname" required /></p>
 				<p><input type="text" name="Middlename" placeholder="Enter Middlename" required /></p>
 				<p><input type="text" name="Extendedname" placeholder="Enter Extendedname" required /></p>
 				<p><input type="number" name="Phonenumber" placeholder="Enter Phonenumber" required /></p>
 				<p><input type="text" name="Street" placeholder="Enter Street" required /></p>
+=======
+				<label>Firstname</label>
+				<p><input type="text" name="Firstname" placeholder="Enter Name" required /></p>
+				<label>Lastname</label>
+				<p><input type="text" name="Lastname" placeholder="Enter lastname" required /></p>
+				<label>Middlename</label>
+				<p><input type="text" name="Middlename" placeholder="Enter Middlename" required /></p>
+				<label>Extendedname</label>
+				<p><input type="text" name="Extendedname" placeholder="Enter Extendedname" required /></p>
+				<label>Phonenumber</label>
+				<p><input type="number" name="Phonenumber" placeholder="Enter Phonenumber" required /></p>
+				<label>Street</label>
+				<p><input type="text" name="Street" placeholder="Enter Street" required /></p>
+				<label>City</label>
+>>>>>>> New update
 				<p><input type="text" name="City" placeholder="Enter City" required /></p>
 				<p><input name="submit" type="submit" value="Submit" /></p>
 			</form>

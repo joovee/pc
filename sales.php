@@ -11,72 +11,12 @@ include("authentication.php");
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
-		<div class="sidebar">
-		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
-			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
-			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
-			<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
-			<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
-		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
-		</div>
-		<center><div class="main w-75">
-		<br/><br/>
-		<div class="form">
-				<h2><font face="Britannic Bold">Collection List</font></h2>
-		</div>
-
-		<table class=" table table-striped table-responsive table-border-collapse" width="100%"  style="border-collapse:collapse; background-color: rgba(0,0,0,0.1)">
-			<thead>
-				<tr class=" text-success"> 
-				<th><strong>Number</strong></th>
-				<th><strong>Code_no</strong></th>
-				<th><strong>Customer_ID</strong></th>
-				<th><strong>Due_date</strong></th>
-				<th><strong>Status</strong></th>
-				<th><strong>Date_paid</strong></th>
-				<th><strong>Interest</strong></th>
-				<th><strong>Edit</strong></th>
-				<th><strong>Delete</strong></th>
-				</tr>
-			</thead>
-		</div>
-			</center>
-				<tbody>
-<?php
-$count=1;
-$sel_query="SELECT * FROM collection_table";
-$result = mysqli_query($con,$sel_query);
-while($row = mysqli_fetch_assoc($result)) { ?>
-=======
-=======
->>>>>>> new update files
 	<style>
 	{
   box-sizing: border-box;
  
 }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> New update
-	<style>
-	{
-  box-sizing: border-box;
- 
-}
-
-<<<<<<< HEAD
->>>>>>> new files
-=======
->>>>>>> new update files
-=======
->>>>>>> New update
 body {
    margin:10px;
   padding:0px;
@@ -180,14 +120,10 @@ body {
                Home 
               </a>
             </li>
-<<<<<<< HEAD
 			<li class="nav-item ">
               <a class="nav-link " href="budgetlist.html" >
                About us
               </a>
-=======
-			
->>>>>>> New update
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -200,41 +136,16 @@ body {
               </a>
             </li>
 			<li class="nav-item ">
-<<<<<<< HEAD
               <a class="nav-link " href="viewcollection.php" >
-               Collection
-              </a>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            </li><li class="nav-item ">
-              <a class="nav-link " href="viewitems.php" >
-               Items
-              </a>
-=======
-=======
->>>>>>> new update files
-            </li>
-			<li class="nav-item ">
-              <a class="nav-link " href="viewitems.php" >
-               Items
-              </a>
-			  <li class="nav-item ">
-              <a class="nav-link " href="changepass.php" >
-               Update Password
-              </a>
-<<<<<<< HEAD
->>>>>>> new files
-=======
->>>>>>> new update files
-            </li><li class="nav-item ">
-=======
-              <a class="nav-link " href="sales.php" >
                Sales
               </a>
             </li>
 			
-			 <li class="nav-item ">
->>>>>>> New update
+			  <li class="nav-item ">
+              <a class="nav-link " href="changepass.php" >
+               Update Password
+              </a>
+            </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
               </a>
@@ -247,38 +158,13 @@ body {
 		<div class="sidebar">
 			<br><br><br>
 		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
-=======
-			<a href="testing.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
->>>>>>> new files
-=======
-			<a href="testing.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
->>>>>>> new update files
-			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
-			<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
-			<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
-		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
-		</div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-		<br><br><br>
->>>>>>> new files
-=======
-		<br><br><br>
->>>>>>> new update files
-=======
 			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
 			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
 			<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
 		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 		</div>
 		<br><br><br>
-		<center><a href="checkbox.php"class="btn btn-primary"> +Add Items</a></center>
->>>>>>> New update
+		<center><h2><font face="Britannic Bold">Sales</font></h2></center>
 		<div class="row">
 		<div class="column" style="background-color:#808080; margin-left:270px;"> 
 			<table width="99%" border="1" style="border-collapse:collapse; background-color:white;">
@@ -302,16 +188,6 @@ body {
 		$sel_query="SELECT * FROM collection_table";
 		$result = mysqli_query($con,$sel_query);
 		while($row = mysqli_fetch_assoc($result)) { ?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> update
-=======
->>>>>>> new files
-=======
->>>>>>> new update files
-=======
->>>>>>> New update
 		<tr><td align="center"><?php echo $count; ?></td>
 			<td align="center"><?php echo $row["Code_no"]; ?></td>
 			<td align="center"><?php echo $row["Customer_ID"]; ?></td>
@@ -326,18 +202,6 @@ body {
 				<a href="deletecollection.php?id=<?php echo $row["Code_no"]; ?>"><i class="fa fa-trash-o"></i></a>
 						</td>
 							</tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<?php $count++; } ?>
-=======
-=======
->>>>>>> new files
-=======
->>>>>>> new update files
-=======
->>>>>>> New update
 		<?php $count++; } ?>
 				</tbody>
 				</thead>
@@ -353,11 +217,7 @@ body {
 				<th><strong>Code_no</strong></th>
 				<th><strong>Product_ID</strong></th>
 				<th><strong>Quantity</strong></th>
-<<<<<<< HEAD
-				<th><strong>Quantity</strong></th>
-=======
 				<th><strong>Unit</strong></th>
->>>>>>> New update
 				<th><strong>Amount</strong></th>
 				<th><strong>Edit</strong></th>
 				<th><strong>Delete</strong></th>
@@ -387,16 +247,6 @@ body {
 				</thead>
 				</table>
 		</div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> update
-=======
->>>>>>> new files
-=======
->>>>>>> new update files
-=======
->>>>>>> New update
 </tbody>
 </table>
 </body>

@@ -30,10 +30,7 @@ include("authentication.php");
                Home 
               </a>
             </li>
-			<li class="nav-item ">
-              <a class="nav-link " href="budgetlist.html" >
-               About us
-              </a>
+			
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -41,6 +38,7 @@ include("authentication.php");
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,10 +52,14 @@ include("authentication.php");
 =======
               <a class="nav-link " href="viewproducts.php" >
 >>>>>>> new update files
+=======
+              <a class="nav-link " href="viewproducts.php" >
+>>>>>>> New update
                Product
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
               <a class="nav-link " href="viewcollection.php" >
                Collection
               </a>
@@ -65,6 +67,12 @@ include("authentication.php");
               <a class="nav-link " href="viewitems.php" >
                Items
               </a>
+=======
+              <a class="nav-link " href="sales.php" >
+               Sales
+              </a>
+            
+>>>>>>> New update
 			   <li class="nav-item ">
               <a class="nav-link " href="changepass.html" >
                Update Password
@@ -76,9 +84,12 @@ include("authentication.php");
                Logout
               </a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
             
             </li>
           </ul>

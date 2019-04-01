@@ -28,10 +28,14 @@ include("authentication.php");
                Home 
               </a>
             </li>
+<<<<<<< HEAD
 			<li class="nav-item ">
               <a class="nav-link " href="budgetlist.html" >
                About us
               </a>
+=======
+			
+>>>>>>> New update
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -47,10 +51,14 @@ include("authentication.php");
               <a class="nav-link " href="viewcollection.php" >
                Collection
               </a>
+<<<<<<< HEAD
             </li><li class="nav-item ">
               <a class="nav-link " href="viewitems.php" >
                Items
               </a>
+=======
+            </li>
+>>>>>>> New update
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
@@ -65,6 +73,7 @@ include("authentication.php");
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	<br><br><br>
 >>>>>>> update
@@ -74,11 +83,17 @@ include("authentication.php");
 =======
 	<br><br><br>
 >>>>>>> new update files
+=======
+	<br><br><br>
+>>>>>>> New update
    <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 	<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Add new Customers</a>
 	<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
 	<a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection </a>
+<<<<<<< HEAD
 	<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
+=======
+>>>>>>> New update
    <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 </div>
 <center><div class="main w-75">

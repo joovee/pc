@@ -50,6 +50,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 >>>>>>> update
@@ -59,6 +60,9 @@
 =======
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 >>>>>>> new update files
+=======
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+>>>>>>> New update
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -117,6 +121,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		<br><br><br>
 >>>>>>> update
@@ -126,6 +131,9 @@
 =======
 		<br><br><br>
 >>>>>>> new update files
+=======
+		<br><br><br>
+>>>>>>> New update
 		<a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 		<a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customer</a>
 		<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Products</a>
@@ -138,6 +146,7 @@
 	<div>
 		<form name="form" method="post" action=""> 
 			<input name="id" type="hidden" value="<?php echo $row['Product_ID'];?>" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -157,6 +166,8 @@
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 			<label>Product_ID:</label>
 			<p><input type="text" name="Product_ID" placeholder="Enter Product_ID"
 			required value="<?php echo $row['Product_ID'];?>" /></p>
@@ -171,11 +182,14 @@
 			<label>Discount:</label><p><input type="text" name="Discount" placeholder="Enter Discount" 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update
 =======
 >>>>>>> new files
 =======
 >>>>>>> new update files
+=======
+>>>>>>> New update
 			required value="<?php echo $row['Discount'];?>" /></p>
 			<p><input name="update_record" type="submit" value="Update" /></p>
 		</form>
