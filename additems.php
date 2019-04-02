@@ -1,55 +1,106 @@
-<?php
-require('db.php');
-include("authentication.php");
-$status = "";
-if(isset($_POST['new']) && $_POST['new']==1){
-    $Product_ID =$_REQUEST['prid'];
-	$Code_no =$_REQUEST['cod_num'];
-    $Quantity = $_REQUEST['Quan'];
-	$Unit = $_REQUEST['unt'];
-	$Amount = $_REQUEST['amnt'];
-    $ins_query="insert into collection_item(Product_ID,Code_no,Quantity,Unit,Amount) values
-    ('$Code_no','$Product_ID','$Quantity','$Unit','$Amount')";
-    mysqli_query($con,$ins_query);
-    $status = "New ITEMS added Successfully.
-    </br></br><a href='viewitems.php'>View Items</a>";
-}
+<?php include('actuel.php');
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Add New ITEMS</title>
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<title>Add New ITEMS</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css"	href="style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		
+
 </head>
-<body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
-<div class="sidebar">
-  <a href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="profile.php"><i class="fa fa-sign-out"></i>Profile</a>
-  <a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items List</a>
-  <a href="viewcustomer.php"><i class="fa fa-address-card-o"></i>Customers</a>
-  <a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Products</a>
-  <a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection</a>
-  <a href="logout.php"><i class="fa fa-fw fa-user"></i> Logout</a>
-</div>
-<div class="main">
-<br/><br/><br/><br/><div class="form">
-<div>
-<h2><font face="Britannic Bold">Add New Items</font></h2>
-<form name="form" method="post" action=""> 
-<input type="hidden" name="new" value="1" />
-<p><input type="text" name="prid" placeholder="Enter Product_ID" required /></p>
-<p><input type="text" name="cod_num" placeholder="Enter Code_no" required /></p>
-<p><input type="number" name="Quan" placeholder="Enter Quantity" required /></p>
-<p><input type="text" name="unt" placeholder="Enter Unit" required /></p>
-<p><input type="text" name="amnt" placeholder="Enter Amount" required /></p>
-<p><input name="submit" type="submit" value="Submit" /></p>
-</form>
-<p style="color:#FF0000;"><?php echo $status; ?></p>
-</div>
-</div>
-</div>
+	<body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
+			<div class="sidebar">
+			   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+				<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
+				<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
+				<a href="viewcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
+				<a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection </a>
+			   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+			</div>
+	<section class="main">
+
+    <div class="row justify-content-center">
+	<div class="col-sm-4">
+	<div class="row justify-content-center">
+	<form action="actuel.php" method="POST">
+	<input type="hidden" name="code_no" value="<?php echo $id; ?>">
+	<div class="form-group">
+	
+		<b><a style="font-size:20px;">Code No.</b></a>
+		<?php
+			$sql = "SELECT * FROM collection_table";
+			$result = mysqli_query($mysqli, $sql);
+
+		?>
+		<select name="Code_no" class="form-control">
+		<?php
+			$resultCheck = mysqli_num_rows($records);
+				while ($row = mysqli_fetch_array($result)){
+					
+		?>
+			<option value="<?php echo $row['Code_no'];?>"><?php echo $row['Code_no'];?></option>
+			<?php
+				}
+			?>
+		</select>
+		
+		<div class="form-group">
+	
+		<b><a style="font-size:20px;">Product ID</b></a>
+		<?php
+			$sql = "SELECT * FROM product_table";
+			$result = mysqli_query($mysqli, $sql);
+
+		?>
+		<select name="product_id" class="form-control">
+		<?php
+			$resultCheck = mysqli_num_rows($records);
+				while ($row = mysqli_fetch_array($result)){
+					
+		?>
+			<option value="<?php echo $row['Product_ID'];?>"><?php echo $row['Product_ID'];?></option>
+			<?php
+				}
+			?>
+		</select>
+
+		<div class="form-group">
+		<font color="black"><label for="exampleInputEmail1"><b>Quantity:</label></b>
+			<input type="quantity" style="width:150px;" name="quantity" class="form-control" value="<?php echo $quantity;?>"placeholder="quantity" required>
+		</div>
+		<div class="form-group">
+		<font color="black"><label for="exampleInputEmail1"><b>Unit:</label></b>
+		<select name="unit" class="form-control">
+			<option value="dozen">dozen</option>
+			<option value="liters">grams</option>
+			<option value="pcs">pcs.</option>
+		</div>
+		</select>
+		<div class="form-group">
+		<font color="black"><label for="exampleInputEmail1"><b>Amount:</label></b>
+			<input type="amount" name="amount" class="form-control" value="<?php echo $amount;?>"placeholder="amount" required>
+		</div>
+		<div class="form-group">
+		<?php 
+			if($update==true):
+		?>
+		<button type="submit" class="btn btn-info" name="update">Update</button>
+		<a href="viewcollection.php"class="btn btn-info">View Table</a>
+		<?php else: ?>
+			<button type="submit" class="btn btn-primary" name="save">Save</button>
+			<a href="viewcollection.php"class="btn btn-primary">View Table</a>
+		<?php endif;?>
+		</div>
+	</form>
+	</div>
+
+<br>
+
 </body>
 </html>

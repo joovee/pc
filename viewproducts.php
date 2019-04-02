@@ -12,25 +12,73 @@ include("authentication.php");
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
-<div class="sidebar">
-  <a href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
-  <a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection</a>
-  <a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items</a>
-  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
-</div>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-responsive">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+          <ul class="navbar-nav ml-auto">
+            <a class="navbar-brand" href="home.html">
+			<img src="photos/PCLogo2017-20Feb16.png" style="float:left;" width="150" height="50" alt=""></a>
+ 	    </a>
+           
+            <li class="nav-item ">
+              <a class="nav-link " href="home.php" >
+               Home 
+              </a>
+            </li>
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link " href="Viewcustomer.php" >
+              Customer
+              </a>
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link " href="viewproducts.php" >
+               Product
+              </a>
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link " href="viewcollection.php" >
+               Collection
+              </a>
+			<li class="nav-item ">
+              <a class="nav-link " href="sales.php" >
+               Sales
+              </a>
+            
+            </li><li class="nav-item ">
+              <a class="nav-link " href="logout.php" >
+               Logout
+              </a>
+            
+            </li>
+          </ul>
+        </div>
+		</button>
+    </nav><br/><br/>
+	
+	<div class="sidebar">
+	<br><br><br>
+	  <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+	  <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
+	  <a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customer</a>
+	  <a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection</a>
+	  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+	</div>
 <center><div class="main w-75">
 <br/><br/><div class="form">
 <h2><font face="Britannic Bold">Product List</font></h2>
 </div>
 
-<table class="table-striped" width="100%"  style="border-collapse:collapse;">
+
+<table class=" table table-striped table-responsive table-border-collapse" width="100%"  style="border-collapse:collapse; background-color: rgba(0,0,0,0.1)">
 <thead>
-<tr>
+<tr class=" text-success"> 
 <th><strong>Number</strong></th>
 <th><strong>Product_ID</strong></th>
 <th><strong>Particular</strong></th>
-<th><strong>Item_Quantity</strong></th>
 <th><strong>Unit</strong></th>
 <th><strong>Regular_Price</strong></th>
 <th><strong>Discount</strong></th>
@@ -50,8 +98,7 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 <td align="center"><?php echo $row["Product_ID"]; ?></td>
 <td align="center"><?php echo $row["Particular"]; ?></td>
 <td align="center"><?php echo $row["Unit"]; ?></td>
-<td align="center"><?php echo $row["Item_Quantity"]; ?></td>
-<td align="center"><?php echo $row["Unit"]; ?></td>
+<td align="center"><?php echo $row["Regular_Price"]; ?></td>
 <td align="center"><?php echo $row["Discount"]; ?></td>
 <td align="center">
 <a href="editproducts.php?id=<?php echo $row["Product_ID"]; ?>"><i class="fa fa-edit"></i></a>

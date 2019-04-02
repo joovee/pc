@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.9
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 18, 2019 at 09:02 AM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 5.6.28
+-- Generation Time: Feb 21, 2019 at 02:18 PM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 7.2.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -46,19 +48,12 @@ INSERT INTO `admin` (`ID`, `username`, `password`) VALUES
 --
 
 CREATE TABLE `collection_items` (
-  `Product_ID` int(11) NOT NULL,
   `Code_no` int(11) NOT NULL,
+  `Product_ID` int(11) NOT NULL,
   `Quantity` int(11) NOT NULL,
   `Unit` varchar(100) NOT NULL,
   `Amount` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `collection_items`
---
-
-INSERT INTO `collection_items` (`Product_ID`, `Code_no`, `Quantity`, `Unit`, `Amount`) VALUES
-(123, 678, 12, 'one dozen', '19234.00');
 
 -- --------------------------------------------------------
 
@@ -67,8 +62,8 @@ INSERT INTO `collection_items` (`Product_ID`, `Code_no`, `Quantity`, `Unit`, `Am
 --
 
 CREATE TABLE `collection_table` (
-  `Customer_ID` int(50) NOT NULL,
   `Code_no` int(11) NOT NULL,
+  `Customer_ID` int(50) NOT NULL,
   `Due_date` date NOT NULL,
   `Status` varchar(20) NOT NULL,
   `Date_paid` date NOT NULL,
@@ -79,8 +74,8 @@ CREATE TABLE `collection_table` (
 -- Dumping data for table `collection_table`
 --
 
-INSERT INTO `collection_table` (`Customer_ID`, `Code_no`, `Due_date`, `Status`, `Date_paid`, `Interest`) VALUES
-(3, 678, '2027-10-19', 'paid', '2017-10-20', '50.00');
+INSERT INTO `collection_table` (`Code_no`, `Customer_ID`, `Due_date`, `Status`, `Date_paid`, `Interest`) VALUES
+(1, 7, '2018-10-12', 'paid', '2018-11-12', '0.50');
 
 -- --------------------------------------------------------
 
@@ -104,7 +99,8 @@ CREATE TABLE `customer_table` (
 --
 
 INSERT INTO `customer_table` (`Customer_ID`, `Firstname`, `Lastname`, `Middlename`, `Extendedname`, `Phonenumber`, `Street`, `City`) VALUES
-(5, 'joo', 'jalal', 'A.', 'none', '34566767', 'lamac', 'oroquieta city');
+(7, 'Ahmed', 'mohammned', 'hjkh', 'jk', '12312312', 'kjh', 'jk'),
+(8, 'joo ', 'jalal', 'A.', 'jr', '3445', 'lower', 'oroq');
 
 -- --------------------------------------------------------
 
@@ -126,7 +122,7 @@ CREATE TABLE `product_table` (
 --
 
 INSERT INTO `product_table` (`Product_ID`, `Particular`, `Item_Quantity`, `Unit`, `Regular_Price`, `Discount`) VALUES
-(123, 'sabon', 12, 'one dozen', '456.00', '50.00');
+(1, 'sabon', 12, 'one dozen', '12.00', '25.00');
 
 --
 -- Indexes for dumped tables
@@ -142,8 +138,8 @@ ALTER TABLE `admin`
 -- Indexes for table `collection_items`
 --
 ALTER TABLE `collection_items`
-  ADD UNIQUE KEY `Product_ID` (`Product_ID`),
-  ADD UNIQUE KEY `Code_no` (`Code_no`);
+  ADD UNIQUE KEY `Code_no` (`Code_no`),
+  ADD UNIQUE KEY `Product_ID` (`Product_ID`);
 
 --
 -- Indexes for table `collection_table`
@@ -173,11 +169,19 @@ ALTER TABLE `product_table`
 --
 ALTER TABLE `admin`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `collection_table`
+--
+ALTER TABLE `collection_table`
+  MODIFY `Code_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `customer_table`
 --
 ALTER TABLE `customer_table`
-  MODIFY `Customer_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `Customer_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
 --
 -- Constraints for dumped tables
 --
@@ -186,7 +190,15 @@ ALTER TABLE `customer_table`
 -- Constraints for table `collection_items`
 --
 ALTER TABLE `collection_items`
-  ADD CONSTRAINT `collection_items_ibfk_1` FOREIGN KEY (`Code_no`) REFERENCES `collection_table` (`Code_no`);
+  ADD CONSTRAINT `collection_items_ibfk_1` FOREIGN KEY (`Code_no`) REFERENCES `collection_table` (`Code_no`),
+  ADD CONSTRAINT `collection_items_ibfk_2` FOREIGN KEY (`Product_ID`) REFERENCES `product_table` (`Product_ID`);
+
+--
+-- Constraints for table `collection_table`
+--
+ALTER TABLE `collection_table`
+  ADD CONSTRAINT `collection_table_ibfk_1` FOREIGN KEY (`Customer_ID`) REFERENCES `customer_table` (`Customer_ID`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
