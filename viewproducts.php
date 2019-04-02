@@ -12,6 +12,28 @@ include("authentication.php");
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<div class="sidebar">
+  <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
+  <a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customer</a>
+  <a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection</a>
+  <a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items</a>
+  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+</div>
+=======
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,6 +50,16 @@ include("authentication.php");
                Home 
               </a>
             </li>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+			<li class="nav-item ">
+              <a class="nav-link " href="budgetlist.html" >
+               About us
+              </a>
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -40,14 +72,30 @@ include("authentication.php");
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
               <a class="nav-link " href="viewcollection.php" >
                Collection
               </a>
 			<li class="nav-item ">
+=======
+<<<<<<< HEAD
+              <a class="nav-link " href="viewcollection.php" >
+               Collection
+              </a>
+            </li><li class="nav-item ">
+              <a class="nav-link " href="viewitems.php" >
+               Items
+              </a>
+=======
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
               <a class="nav-link " href="sales.php" >
                Sales
               </a>
             
+<<<<<<< HEAD
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
@@ -58,21 +106,53 @@ include("authentication.php");
         </div>
 		</button>
     </nav><br/><br/>
+<<<<<<< HEAD
 	
+=======
+<<<<<<< HEAD
+=======
+	
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 	<div class="sidebar">
 	<br><br><br>
 	  <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 	  <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
 	  <a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customer</a>
 	  <a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection</a>
+<<<<<<< HEAD
 	  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 	</div>
+=======
+<<<<<<< HEAD
+	  <a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items</a>
+	  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+	</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+	  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+	</div>
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 <center><div class="main w-75">
 <br/><br/><div class="form">
 <h2><font face="Britannic Bold">Product List</font></h2>
 </div>
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 <table class=" table table-striped table-responsive table-border-collapse" width="100%"  style="border-collapse:collapse; background-color: rgba(0,0,0,0.1)">
 <thead>
 <tr class=" text-success"> 
@@ -97,6 +177,19 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 <tr><td align="center"><?php echo $count; ?></td>
 <td align="center"><?php echo $row["Product_ID"]; ?></td>
 <td align="center"><?php echo $row["Particular"]; ?></td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<td align="center"><?php echo $row["Item_Quantity"]; ?></td>
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 <td align="center"><?php echo $row["Unit"]; ?></td>
 <td align="center"><?php echo $row["Regular_Price"]; ?></td>
 <td align="center"><?php echo $row["Discount"]; ?></td>

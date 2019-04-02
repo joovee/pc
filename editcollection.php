@@ -65,6 +65,31 @@
 	<div>
 		<form name="form" method="post" action=""> 
 			<input name="id" type="hidden" value="<?php echo $row['Code_no'];?>" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<p><input type="text" name="Code_no" placeholder="Enter Code_no"
+			required value="<?php echo $row['Code_no'];?>" /></p>
+			<p><input type="text" name="Customer_ID" placeholder="Enter Customer_ID"
+			required value="<?php echo $row['Customer_ID'];?>" /></p>
+			<p><input type="date" name="Due_date" placeholder="Enter Due_date" 
+			required value="<?php echo $row['Due_date'];?>" /></p>
+			<p><input type="text" name="Status" placeholder="Enter Status" 
+			required value="<?php echo $row['Status'];?>" /></p>
+			<p><input type="date" name="Date_paid" placeholder="Enter Date_paid" 
+			required value="<?php echo $row['Date_paid'];?>" /></p>
+			<p><input type="text" name="Interest" placeholder="Enter Interest" 
+=======
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			<label>Code_no</label><p><input type="text" name="Code_no" placeholder="Enter Code_no"
 			required value="<?php echo $row['Code_no'];?>" /></p>
 			<label>Customer_ID</label><p><input type="text" name="Customer_ID" placeholder="Enter Customer_ID"
@@ -80,6 +105,19 @@
 			<label>Date_paid</label><p><input type="date" name="Date_paid" placeholder="Enter Date_paid" 
 			required value="<?php echo $row['Date_paid'];?>" /></p>
 			<label>Interest</label><p><input type="text" name="Interest" placeholder="Enter Interest" 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			required value="<?php echo $row['Interest'];?>" /></p>
 			<p><input name="update_record" type="submit" value="Update" /></p>
 		</form>

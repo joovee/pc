@@ -72,7 +72,11 @@
 				
 		
 		<div style="width:900px;">
+<<<<<<< HEAD
 		<table width="100%" border="1" style="border-collapse:collapse;" ">
+=======
+		<table width="100%" border="1" style="border-collapse:collapse;" class="table table-striped table-dark">
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 		<thead>
 		<tr class="bg-yellow">
 			
@@ -80,7 +84,11 @@
 			<th><strong>Unit</strong></th>
 			<th><strong>Quantity</strong></th>
 			<th><strong>Amount</strong></th>
+<<<<<<< HEAD
 			<th><strong>Tick</strong></th>
+=======
+			<th><strong>Click</strong></th>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			
 		</tr>
 		</thead>

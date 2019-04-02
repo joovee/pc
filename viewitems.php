@@ -112,6 +112,47 @@ body {
 			<a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection </a>
 		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 		</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+		<center><div class="main w-75">
+		<br/><br/>
+		<div class="form">
+				<h2><font face="Britannic Bold">Items List</font></h2>
+		</div>
+
+		<table class=" table table-striped table-responsive table-border-collapse" width="60%"  style="border-collapse:collapse; background-color: rgba(0,0,0,0.1)">
+			<thead>
+				<tr class=" text-success"> 
+				<th><strong>Number</strong></th>
+				<th><strong>Code_no</strong></th>
+				<th><strong>Product_ID</strong></th>
+				<th><strong>Quantity</strong></th>
+				<th><strong>Unit</strong></th>
+				<th><strong>Amount</strong></th>
+				<th><strong>Edit</strong></th>
+				<th><strong>Delete</strong></th>
+				</tr>
+			</thead>
+				</div>
+					</center>
+						<tbody>
+<?php
+$count=1;
+$sel_query="SELECT * FROM collection_items";
+$result = mysqli_query($con,$sel_query);
+while($row = mysqli_fetch_assoc($result)) { ?>
+=======
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 		<div class="row" >
 
 		</div>
@@ -125,13 +166,18 @@ body {
 				<th><strong>Code_no</strong></th>
 				<th><strong>Product_ID</strong></th>
 				<th><strong>Quantity</strong></th>
+<<<<<<< HEAD
 				<th><strong>Unit</strong></th>
+=======
+				<th><strong>Quantity</strong></th>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 				<th><strong>Amount</strong></th>
 				</tr>
 				</thead>
 				
 				<tbody>
 				<?php
+<<<<<<< HEAD
 				$id = $_GET['id'];
 		$count=1;
 		$sel_query="SELECT * FROM collection_items WHERE Code_no = $id";
@@ -142,6 +188,22 @@ body {
 		$total += $subtotal;
 		
 		?>
+=======
+		$count=1;
+		$sel_query="SELECT * FROM collection_items";
+		$result = mysqli_query($con,$sel_query);
+		while($row = mysqli_fetch_assoc($result)) { ?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			<tr><td align="center"><?php echo $count; ?></td>
 				<td align="center"><?php echo $row["Code_no"]; ?></td>
 				<td align="center"><?php echo $row["Product_ID"]; ?></td>
@@ -155,6 +217,21 @@ body {
 			<a href="deleteitems.php?id=<?php echo $row["Code_no"]; ?>"><i class="fa fa-trash-o"></i></a>
 				</td>
 					</tr>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<?php $count++; } ?>	
+=======
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			<?php $count++; } ?>	
 				</tbody>
 				</thead>
@@ -166,6 +243,19 @@ body {
 		<div class="footer">
 			
 		</div>	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 </tbody>
 </table>
 

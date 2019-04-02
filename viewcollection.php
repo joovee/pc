@@ -11,12 +11,78 @@ include("authentication.php");
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
+		<div class="sidebar">
+		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
+			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
+			<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
+			<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
+		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+		</div>
+		<center><div class="main w-75">
+		<br/><br/>
+		<div class="form">
+				<h2><font face="Britannic Bold">Collection List</font></h2>
+		</div>
+
+		<table class=" table table-striped table-responsive table-border-collapse" width="100%"  style="border-collapse:collapse; background-color: rgba(0,0,0,0.1)">
+			<thead>
+				<tr class=" text-success"> 
+				<th><strong>Number</strong></th>
+				<th><strong>Code_no</strong></th>
+				<th><strong>Customer_ID</strong></th>
+				<th><strong>Due_date</strong></th>
+				<th><strong>Status</strong></th>
+				<th><strong>Date_paid</strong></th>
+				<th><strong>Interest</strong></th>
+				<th><strong>Edit</strong></th>
+				<th><strong>Delete</strong></th>
+				</tr>
+			</thead>
+		</div>
+			</center>
+				<tbody>
+<?php
+$count=1;
+$sel_query="SELECT * FROM collection_table";
+$result = mysqli_query($con,$sel_query);
+while($row = mysqli_fetch_assoc($result)) { ?>
+=======
+=======
+>>>>>>> new update files
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 	<style>
 	{
   box-sizing: border-box;
  
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> New update
+	<style>
+	{
+  box-sizing: border-box;
+ 
+}
+
+<<<<<<< HEAD
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 body {
    margin:10px;
   padding:0px;
@@ -120,7 +186,18 @@ body {
                Home 
               </a>
             </li>
+<<<<<<< HEAD
 			
+=======
+<<<<<<< HEAD
+			<li class="nav-item ">
+              <a class="nav-link " href="budgetlist.html" >
+               About us
+              </a>
+=======
+			
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -133,12 +210,47 @@ body {
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              <a class="nav-link " href="viewcollection.php" >
+               Collection
+              </a>
+<<<<<<< HEAD
+<<<<<<< HEAD
+            </li><li class="nav-item ">
+              <a class="nav-link " href="viewitems.php" >
+               Items
+              </a>
+=======
+=======
+>>>>>>> new update files
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link " href="viewitems.php" >
+               Items
+              </a>
+			  <li class="nav-item ">
+              <a class="nav-link " href="changepass.php" >
+               Update Password
+              </a>
+<<<<<<< HEAD
+>>>>>>> new files
+=======
+>>>>>>> new update files
+            </li><li class="nav-item ">
+=======
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
               <a class="nav-link " href="sales.php" >
                Sales
               </a>
             </li>
 			
 			 <li class="nav-item ">
+<<<<<<< HEAD
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
               <a class="nav-link " href="logout.php" >
                Logout
               </a>
@@ -151,6 +263,33 @@ body {
 		<div class="sidebar">
 			<br><br><br>
 		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
+=======
+			<a href="testing.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
+>>>>>>> new files
+=======
+			<a href="testing.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
+>>>>>>> new update files
+			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
+			<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
+			<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
+		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+		</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		<br><br><br>
+>>>>>>> new files
+=======
+		<br><br><br>
+>>>>>>> new update files
+=======
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
 			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
 			<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
@@ -158,6 +297,10 @@ body {
 		</div>
 		<br><br><br>
 		<center><a href="checkbox.php"class="btn btn-primary"> +Add Items</a></center>
+<<<<<<< HEAD
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 		<div class="row">
 		<div class="column" style="background-color:#808080; margin-left:270px;"> 
 			<table width="99%" border="1" style="border-collapse:collapse; background-color:white;">
@@ -165,8 +308,13 @@ body {
 				<thead>
 				<tr class=" text-success"> 
 					<th><strong>No</strong></th>
+<<<<<<< HEAD
 					
 					<th><strong>Customer_Name</strong></th>
+=======
+					<th><strong>Code_no</strong></th>
+					<th><strong>Customer_ID</strong></th>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 					<th><strong>Due_date</strong></th>
 					<th><strong>Status</strong></th>
 					<th><strong>Date_paid</strong></th>
@@ -178,12 +326,31 @@ body {
 				<tbody>
 				<?php
 		$count=1;
+<<<<<<< HEAD
 		$sel_query="SELECT * FROM collection_table, customer_table WHERE collection_table.Customer_ID =customer_table.Customer_ID";
 		$result = mysqli_query($con,$sel_query);
 		while($row = mysqli_fetch_assoc($result)) { ?>
 		<tr><td align="center"><?php echo $count; ?></td>
 			
 			<td align="center"><?php echo $row["Firstname"]; ?></td>
+=======
+		$sel_query="SELECT * FROM collection_table";
+		$result = mysqli_query($con,$sel_query);
+		while($row = mysqli_fetch_assoc($result)) { ?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+		<tr><td align="center"><?php echo $count; ?></td>
+			<td align="center"><?php echo $row["Code_no"]; ?></td>
+			<td align="center"><?php echo $row["Customer_ID"]; ?></td>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			<td align="center"><?php echo $row["Due_date"]; ?></td>
 			<td align="center"><?php echo $row["Status"]; ?></td>
 			<td align="center"><?php echo $row["Date_paid"]; ?></td>
@@ -195,6 +362,21 @@ body {
 				<a href="deletecollection.php?id=<?php echo $row["Code_no"]; ?>"><i class="fa fa-trash-o"></i></a>
 						</td>
 							</tr>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<?php $count++; } ?>
+=======
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 		<?php $count++; } ?>
 				</tbody>
 				</thead>
@@ -210,7 +392,15 @@ body {
 				<th><strong>Code_no</strong></th>
 				<th><strong>Product_ID</strong></th>
 				<th><strong>Quantity</strong></th>
+<<<<<<< HEAD
 				<th><strong>Unit</strong></th>
+=======
+<<<<<<< HEAD
+				<th><strong>Quantity</strong></th>
+=======
+				<th><strong>Unit</strong></th>
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 				<th><strong>Amount</strong></th>
 				<th><strong>Edit</strong></th>
 				<th><strong>Delete</strong></th>
@@ -219,12 +409,20 @@ body {
 				<tbody>
 				<?php
 		$count=1;
+<<<<<<< HEAD
 		$sel_query="SELECT * FROM collection_items, product_table WHERE collection_items.Product_ID =product_table.Product_ID";
+=======
+		$sel_query="SELECT * FROM collection_items";
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 		$result = mysqli_query($con,$sel_query);
 		while($row = mysqli_fetch_assoc($result)) { ?>
 			<tr><td align="center"><?php echo $count; ?></td>
 				<td align="center"><?php echo $row["Code_no"]; ?></td>
+<<<<<<< HEAD
 				<td align="center"><?php echo $row["Particular"]; ?></td>
+=======
+				<td align="center"><?php echo $row["Product_ID"]; ?></td>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 				<td align="center"><?php echo $row["Quantity"]; ?></td>
 				<td align="center"><?php echo $row["Unit"]; ?></td>
 				<td align="center"><?php echo $row["Amount"]; ?></td>
@@ -240,6 +438,19 @@ body {
 				</thead>
 				</table>
 		</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 </tbody>
 </table>
 </body>

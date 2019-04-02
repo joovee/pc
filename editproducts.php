@@ -47,7 +47,26 @@
 <head>
 		<meta charset="utf-8">
 		<title>Update Record</title>
+<<<<<<< HEAD
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+>>>>>>> update
+=======
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+>>>>>>> new files
+=======
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+>>>>>>> new update files
+=======
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -103,7 +122,26 @@
     </nav><br/><br/>
 <br/><br/><br/><br/>
 	<div class="sidebar">
+<<<<<<< HEAD
 		<br><br><br>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		<br><br><br>
+>>>>>>> update
+=======
+		<br><br><br>
+>>>>>>> new files
+=======
+		<br><br><br>
+>>>>>>> new update files
+=======
+		<br><br><br>
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 		<a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 		<a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customer</a>
 		<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Products</a>
@@ -116,6 +154,31 @@
 	<div>
 		<form name="form" method="post" action=""> 
 			<input name="id" type="hidden" value="<?php echo $row['Product_ID'];?>" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<p><input type="text" name="Product_ID" placeholder="Enter Product_ID"
+			required value="<?php echo $row['Product_ID'];?>" /></p>
+			<p><input type="text" name="Particular" placeholder="Enter Particular"
+			required value="<?php echo $row['Particular'];?>" /></p>
+			<p><input type="text" name="Item_Quantity" placeholder="Enter Item_Quantity" 
+			required value="<?php echo $row['Item_Quantity'];?>" /></p>
+			<p><input type="text" name="Unit" placeholder="Enter Unit" 
+			required value="<?php echo $row['Unit'];?>" /></p>
+			<p><input type="text" name="Regular_Price" placeholder="Enter Regular_Price" 
+			required value="<?php echo $row['Regular_Price'];?>" /></p>
+			<p><input type="text" name="Discount" placeholder="Enter Discount" 
+=======
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			<label>Product_ID:</label>
 			<p><input type="text" name="Product_ID" placeholder="Enter Product_ID"
 			required value="<?php echo $row['Product_ID'];?>" /></p>
@@ -128,6 +191,19 @@
 			<label>Regular_Price:</label><p><input type="text" name="Regular_Price" placeholder="Enter Regular_Price" 
 			required value="<?php echo $row['Regular_Price'];?>" /></p>
 			<label>Discount:</label><p><input type="text" name="Discount" placeholder="Enter Discount" 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			required value="<?php echo $row['Discount'];?>" /></p>
 			<p><input name="update_record" type="submit" value="Update" /></p>
 		</form>

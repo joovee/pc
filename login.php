@@ -40,7 +40,15 @@ if (isset($_POST['submit'])){
 <br/><br/><br/><br/><br/><br/>
 <div class="form">
 <h1><font face="Britannic Bold"><font color="red">Log In</font></font></h1>
+<<<<<<< HEAD
 <form method="post">
+=======
+<<<<<<< HEAD
+<form action="" method="post" name="login">
+=======
+<form method="post">
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 <input type="text" name="username" placeholder="Username" required />
 <input type="password" name="password" placeholder="Password" required /><br/>
 <input name="submit" type="submit" value="Submit" />

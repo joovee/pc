@@ -63,6 +63,29 @@
 	<div>
 		<form name="form" method="post" action=""> 
 			<input name="id" type="hidden" value="<?php echo $row['Code_no'];?>" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<p><input type="text" name="Code_no" placeholder="Enter Code_no"
+			required value="<?php echo $row['Code_no'];?>" /></p>
+			<p><input type="text" name="Product_ID" placeholder="Enter Product_ID"
+			required value="<?php echo $row['Product_ID'];?>" /></p>
+			<p><input type="date" name="Quantity" placeholder="Enter Quantity" 
+			required value="<?php echo $row['Quantity'];?>" /></p>
+			<p><input type="text" name="Unit" placeholder="Enter Unit" 
+			required value="<?php echo $row['Unit'];?>" /></p>
+			<p><input type="date" name="Amount" placeholder="Enter Amount" 
+=======
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			<label>Code_no:</label>
 			<p><input type="text" name="Code_no" placeholder="Enter Code_no"
 			required value="<?php echo $row['Code_no'];?>" /></p>
@@ -73,6 +96,19 @@
 			<label>Unit:</label><p><input type="text" name="Unit" placeholder="Enter Unit" 
 			required value="<?php echo $row['Unit'];?>" /></p>
 			<label>Amount:</label><p><input type="text" name="Amount" placeholder="Enter Amount" 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			required value="<?php echo $row['Amount'];?>" /></p>
 			<p><input name="update_record" type="submit" value="Update" /></p>
 		</form>

@@ -28,7 +28,18 @@ include("authentication.php");
                Home 
               </a>
             </li>
+<<<<<<< HEAD
 			
+=======
+<<<<<<< HEAD
+			<li class="nav-item ">
+              <a class="nav-link " href="budgetlist.html" >
+               About us
+              </a>
+=======
+			
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -44,7 +55,18 @@ include("authentication.php");
               <a class="nav-link " href="viewcollection.php" >
                Collection
               </a>
+<<<<<<< HEAD
             </li>
+=======
+<<<<<<< HEAD
+            </li><li class="nav-item ">
+              <a class="nav-link " href="viewitems.php" >
+               Items
+              </a>
+=======
+            </li>
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
@@ -56,11 +78,37 @@ include("authentication.php");
 		</button>
     </nav><br/><br/>
 <div class="sidebar">
+<<<<<<< HEAD
 	<br><br><br>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	<br><br><br>
+>>>>>>> update
+=======
+	<br><br><br>
+>>>>>>> new files
+=======
+	<br><br><br>
+>>>>>>> new update files
+=======
+	<br><br><br>
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
    <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 	<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Add new Customers</a>
 	<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
 	<a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection </a>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	<a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items </a>
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
    <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 </div>
 <center><div class="main w-75">

@@ -5,13 +5,46 @@ $status = "";
 if(isset($_POST['new']) && $_POST['new']==1){
 	$id =$_REQUEST['Product_ID'];
     $part =$_REQUEST['Particular'];
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    $itq = $_REQUEST['Item_Quantity'];
+	$unt = $_REQUEST['Unit'];
+	$regprice = $_REQUEST['Regular_Price'];
+    $discount = $_REQUEST['Discount'];
+    $ins_query="insert into product_table(Product_ID,Particular,Item_Quantity,Unit,Regular_Price,Discount) values
+    ('$id','$part','$itq','$unt','$regprice','$discount')";
+=======
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 	$unt = $_REQUEST['Unit'];
 	$regprice = $_REQUEST['Regular_Price'];
     $discount = $_REQUEST['Discount'];
     $ins_query="insert into product_table(Product_ID,Particular,Unit,Regular_Price,Discount) values
+<<<<<<< HEAD
     ('$id','$part','$unt','$regprice','$discount')";
     mysqli_query($con,$ins_query);
     $status = "New product added Successfully.
+=======
+<<<<<<< HEAD
+    ('$id','$part','$itq','$regprice','$discount')";
+<<<<<<< HEAD
+>>>>>>> new files
+=======
+>>>>>>> new update files
+    mysqli_query($con,$ins_query);
+    $status = "New customer added Successfully.
+=======
+    ('$id','$part','$unt','$regprice','$discount')";
+    mysqli_query($con,$ins_query);
+    $status = "New product added Successfully.
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
     </br></br><a href='viewproducts.php'>View Product</a>";
 }
 ?>
@@ -22,6 +55,24 @@ include("authentication.php");
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
+	<meta charset="utf-8">
+	<title>Products</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+	<nav class="navbar fixed-top navbar-expand-lg navbar-black bg-white fixed-top">
+=======
 <meta charset="utf-8">
 <title>View Products</title>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
@@ -30,6 +81,10 @@ include("authentication.php");
 </head>
 <body background="photos/pexels-photo-304664.jpeg" alt="Responsive background-image" >
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+<<<<<<< HEAD
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
       <div class="container-responsive">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,7 +100,18 @@ include("authentication.php");
                Home 
               </a>
             </li>
+<<<<<<< HEAD
 			
+=======
+<<<<<<< HEAD
+			<li class="nav-item ">
+              <a class="nav-link " href="budgetlist.html" >
+               About us
+              </a>
+=======
+			
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
             </li>
 			<li class="nav-item ">
               <a class="nav-link " href="Viewcustomer.php" >
@@ -58,10 +124,26 @@ include("authentication.php");
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              <a class="nav-link " href="viewcollection.php" >
+               Collection
+              </a>
+            </li><li class="nav-item ">
+              <a class="nav-link " href="viewitems.php" >
+               Items
+              </a>
+=======
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
               <a class="nav-link " href="sales.php" >
                Sales
               </a>
             
+<<<<<<< HEAD
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
@@ -72,11 +154,33 @@ include("authentication.php");
         </div>
 		</button>
     </nav><br/><br/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 	<div class="sidebar">
 	  <a class="mt-5"href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
 	  <a href="addproducts.php"><i class="fa fa-address-card-o"></i>Add new Products</a>
 	  <a href="Viewcustomer.php"><i class="fa fa-address-card-o"></i>Customer</a>
+<<<<<<< HEAD
 	  <a href="sales.php"><i class="fa fa-address-card-o"></i>Collection</a>
+=======
+<<<<<<< HEAD
+	  <a href="viewcollection.php"><i class="fa fa-address-card-o"></i>Collection</a>
+	  <a href="viewitems.php"><i class="fa fa-address-card-o"></i>Items</a>
+=======
+	  <a href="sales.php"><i class="fa fa-address-card-o"></i>Collection</a>
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 	  <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
 	</div>
 	<div class="main">
@@ -85,12 +189,42 @@ include("authentication.php");
 	<h2><font face="Britannic Bold">Add New Products</font></h2>
 	<form name="form" method="post" action=""> 
 	<input type="hidden" name="new" value="1" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	<p><input type="text" name="Product_ID" placeholder="Enter Product_ID" required /></p>
+	<p><input type="text" name="Particular" placeholder="Enter Particular" required /></p>
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<p><input type="text" name="Item_Quantity" placeholder="Enter Item_Quantity" required /></p>
+<<<<<<< HEAD
+	<p><input type="text" name="Unit" placeholder="Enter Unit" required /></p>
+	<p><input type="number" name="Regular_Price" placeholder="Enter Regular_Price" required /></p>
+	<p><input type="text" name="Discount" placeholder="Enter Discount" required /></p>
+	<p><input name="submit" type="submit" value="Submit" /></p>
+=======
+	<label> Unit: </label>
+					<select input type="text" name="Unit" class="form-control" placeholder="Unit" required  >
+=======
+	<label> Unit: </label>
+					<select input type="text" name="Unit" style="width:197px;" class="form-control" placeholder="Unit" required  >
+>>>>>>> new files
+=======
+	<label> Unit: </label>
+					<select input type="text" name="Unit" style="width:197px;" class="form-control" placeholder="Unit" required  >
+>>>>>>> new update files
+=======
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 	<label>Product_ID:</label>
 	<p><input type="text" name="Product_ID" placeholder="Enter Product_ID" required /></p>
 	<label>Particular:</label>
 	<p><input type="text" name="Particular" placeholder="Enter Particular" required /></p>
 	<label> Unit: </label>
 					<select input type="text" name="Unit" style="width:197px;" class="form-control" placeholder="Unit" required  >
+<<<<<<< HEAD
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 						<option placeholder=""></option>
 						<option placeholder="">pack</option>
 						<option placeholder="">kl</option>
@@ -99,11 +233,30 @@ include("authentication.php");
 						<option placeholder="">liters</option>
 						
 					</select>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	<p><input type="text" name="Regular_Price" placeholder="Enter Regular_Price" required /></p>
+	<p><input type="text" name="Discount" placeholder="Enter Discount" required /></p>
+	<p><input name="submit" type="submit" value="Save" /></p>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> update
+=======
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 	<label>Regular_Price:</label>
 	<p><input type="text" name="Regular_Price" placeholder="Enter Regular_Price" required /></p>
 	<label>Discount:</label>
 	<p><input type="text" name="Discount" placeholder="Enter Discount" required /></p>
 	<p><input name="submit" type="submit" value="Save" /></p>
+<<<<<<< HEAD
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 	</form>
 	<p style="color:#FF0000;"><?php echo $status; ?></p>
 </div>

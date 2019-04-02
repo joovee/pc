@@ -38,11 +38,32 @@ include("authentication.php");
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
               <a class="nav-link " href="viewproducts.php" >
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+              <a class="nav-link " href="viewproduct.php" >
+=======
+              <a class="nav-link " href="viewproducts.php" >
+>>>>>>> update
+=======
+              <a class="nav-link " href="viewproducts.php" >
+>>>>>>> new files
+=======
+              <a class="nav-link " href="viewproducts.php" >
+>>>>>>> new update files
+=======
+              <a class="nav-link " href="viewproducts.php" >
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
                Product
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
               <a class="nav-link " href="viewcollection.php" >
                Collection
               </a>
@@ -54,11 +75,42 @@ include("authentication.php");
 			   <li class="nav-item ">
               <a class="nav-link " href="changepass.html" >
                Update Password
+=======
+<<<<<<< HEAD
+              <a class="nav-link " href="viewcollection.php" >
+               Collection
               </a>
+            </li><li class="nav-item ">
+              <a class="nav-link " href="viewitems.php" >
+               Items
+              </a>
+=======
+              <a class="nav-link " href="sales.php" >
+               Sales
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
+              </a>
+            
+>>>>>>> New update
+			   <li class="nav-item ">
+              <a class="nav-link " href="changepass.html" >
+               Update Password
+              </a>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
                Logout
               </a>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> new files
+=======
+>>>>>>> new update files
+=======
+>>>>>>> New update
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
             
             </li>
           </ul>

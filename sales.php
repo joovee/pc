@@ -136,14 +136,23 @@ body {
               </a>
             </li>
 			<li class="nav-item ">
+<<<<<<< HEAD
               <a class="nav-link " href="sales.php" >
+=======
+              <a class="nav-link " href="viewcollection.php" >
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
                Sales
               </a>
             </li>
 			
 			  <li class="nav-item ">
+<<<<<<< HEAD
               <a class="nav-link " href="viewcollection.php" >
                Collection
+=======
+              <a class="nav-link " href="changepass.php" >
+               Update Password
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
               </a>
             </li><li class="nav-item ">
               <a class="nav-link " href="logout.php" >
@@ -158,7 +167,11 @@ body {
 		<div class="sidebar">
 			<br><br><br>
 		   <a class="mt-5" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+<<<<<<< HEAD
 			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add Collection </a>
+=======
+			<a href="addcollection.php"><i class="fa fa-address-card-o"></i>Add new Collection </a>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			<a href="viewproducts.php"><i class="fa fa-address-card-o"></i>Product </a>
 			<a href="addcustomer.php"><i class="fa fa-address-card-o"></i>Customers </a>
 		   <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
@@ -172,32 +185,59 @@ body {
 				<thead>
 				<tr class=" text-success"> 
 					<th><strong>No</strong></th>
+<<<<<<< HEAD
 					<th><strong>Customer_Name</strong></th>
+=======
+					<th><strong>Code_no</strong></th>
+					<th><strong>Customer_ID</strong></th>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 					<th><strong>Due_date</strong></th>
 					<th><strong>Status</strong></th>
 					<th><strong>Date_paid</strong></th>
 					<th><strong>Interest</strong></th>
+<<<<<<< HEAD
 					
+=======
+					<th><strong>Edit</strong></th>
+					<th><strong>Delete</strong></th>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 				</tr>
 				</thead>
 				<tbody>
 				<?php
 		$count=1;
+<<<<<<< HEAD
 		$sel_query="SELECT * FROM collection_table, customer_table WHERE collection_table.Customer_ID =customer_table.Customer_ID";
 		$result = mysqli_query($con,$sel_query);
 		while($row = mysqli_fetch_assoc($result)) { ?>
 		<tr><td align="center"><?php echo $count; ?></td>
 			
 			<td align="center"><?php echo $row["Firstname"]; echo " ";echo $row["Lastname"]; ?></td>
+=======
+		$sel_query="SELECT * FROM collection_table";
+		$result = mysqli_query($con,$sel_query);
+		while($row = mysqli_fetch_assoc($result)) { ?>
+		<tr><td align="center"><?php echo $count; ?></td>
+			<td align="center"><?php echo $row["Code_no"]; ?></td>
+			<td align="center"><?php echo $row["Customer_ID"]; ?></td>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 			<td align="center"><?php echo $row["Due_date"]; ?></td>
 			<td align="center"><?php echo $row["Status"]; ?></td>
 			<td align="center"><?php echo $row["Date_paid"]; ?></td>
 			<td align="center"><?php echo $row["Interest"]; ?></td>
 			<td align="center">
+<<<<<<< HEAD
 			<td align="center">
 			<a href="record.php?id=<?php echo $row["Code_no"]; ?>">Records</a>
 				</td>
 				
+=======
+				<a href="editcollection.php?id=<?php echo $row["Code_no"]; ?>"><i class="fa fa-edit"></i></a>
+					</td>
+				<td align="center">
+				<a href="deletecollection.php?id=<?php echo $row["Code_no"]; ?>"><i class="fa fa-trash-o"></i></a>
+						</td>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 							</tr>
 		<?php $count++; } ?>
 				</tbody>
@@ -216,23 +256,44 @@ body {
 				<th><strong>Quantity</strong></th>
 				<th><strong>Unit</strong></th>
 				<th><strong>Amount</strong></th>
+<<<<<<< HEAD
 				
+=======
+				<th><strong>Edit</strong></th>
+				<th><strong>Delete</strong></th>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 				</tr>
 				</thead>
 				<tbody>
 				<?php
 		$count=1;
+<<<<<<< HEAD
 		$sel_query="SELECT * FROM collection_items, product_table WHERE collection_items.Product_ID =product_table.Product_ID";
+=======
+		$sel_query="SELECT * FROM collection_items";
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 		$result = mysqli_query($con,$sel_query);
 		while($row = mysqli_fetch_assoc($result)) { ?>
 			<tr><td align="center"><?php echo $count; ?></td>
 				<td align="center"><?php echo $row["Code_no"]; ?></td>
+<<<<<<< HEAD
 				<td align="center"><?php echo $row["Particular"]; ?></td>
+=======
+				<td align="center"><?php echo $row["Product_ID"]; ?></td>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 				<td align="center"><?php echo $row["Quantity"]; ?></td>
 				<td align="center"><?php echo $row["Unit"]; ?></td>
 				<td align="center"><?php echo $row["Amount"]; ?></td>
 				<td align="center">
+<<<<<<< HEAD
 			
+=======
+			<a href="edititems.php?id=<?php echo $row["Code_no"]; ?>"><i class="fa fa-edit"></i></a>
+			</td>
+			<td align="center">
+			<a href="deleteitems.php?id=<?php echo $row["Code_no"]; ?>"><i class="fa fa-trash-o"></i></a>
+				</td>
+>>>>>>> 5609e48a566ccdf3f4a61af513cf088d03767b4f
 					</tr>
 			<?php $count++; } ?>	
 				</tbody>
